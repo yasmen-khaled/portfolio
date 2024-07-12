@@ -1,0 +1,33 @@
+.custom-timeline {
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+ 
+}
+
+
+.vertical-timeline-element-content {
+  /* Your existing styles */
+  
+
+}
+
+.vertical-timeline-element-content-arrow::before {
+  /* Your existing styles */
+
+}
+
+/* New styles for the zigzag effect */
+
+
+@keyframes moveZigzag {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+ 
+}
+
+

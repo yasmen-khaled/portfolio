@@ -1,0 +1,38 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  
+  .terminal-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid black;
+    padding-right: .25em;
+    margin-bottom: 1em;
+    animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+    font-family: 'Terminal', sans-serif;
+    font-size: 25px; 
+    justify-content: center; 
+    align-items: center; 
+                                                
+  }
+  
+  
+  .terminal-text::after {
+    content: '|';
+    float: right;
+    animation: blink-caret 2s step-end infinite;
+  }
+  
+  .terminal-text h1 {
+    font-size: 100px;
+  }
+
+
+
+

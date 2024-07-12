@@ -1,0 +1,89 @@
+.cardContainer {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 320px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(65, 65, 65, 0.308);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    cursor: pointer;
+  }
+  
+
+  
+  
+  .minmaxContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .maxHeading,
+  .minHeading {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .maxTemp,
+  .minTemp {
+    font-size: 0.6em;
+    font-weight: 500;
+    color: rgb(197, 197, 197);
+  }
+  
+  .cardContainer::before {
+    width: 100px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    background-color: rgba(158, 109, 214, 0.76);
+    z-index: -1;
+    border-radius: 50%;
+    left: 100px;
+    top: 50px;
+    transition: all 1s;
+  }
+  
+  .cardContainer:hover::before {
+    transform: translate(-50px, 50px);
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Additional styles for the container if needed */
+  }
+  
+  .project-image {
+    border-radius: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100px;
+    height: 100px;
+   
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Add some padding or margin if needed */
+    padding: 10px;
+  }
+  
