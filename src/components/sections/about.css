@@ -14,14 +14,7 @@
     --color: #32a6ff
   }
   
-  .notification:before {
-    position: absolute;
-    content: "";
-    inset: 0.0625rem;
-    border-radius: 0.9375rem;
-    background: #18181b;
-    z-index: 2
-  }
+
   
   .notification:after {
     position: absolute;

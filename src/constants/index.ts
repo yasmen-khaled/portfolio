@@ -9,9 +9,7 @@ import type {
 
 import {
   mobile,
-  backend,
-  creator,
-  web,
+  react,
   javascript,
   typescript,
   html,
@@ -32,6 +30,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  ui,
+  ps,
+  three,
+  laravel,
+  typescript2,
+  blnder,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -51,31 +55,42 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "three",
+    icon: three,
   },
   {
     title: "React Native Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Backend laravel",
+    icon: laravel,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Content react",
+    icon: react,
   },
 
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Content ps",
+    icon: ps,
   },
 
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Content ui",
+    icon: ui,
   },
+
+  {
+    title: "Content typescript2",
+    icon: typescript2,
+  },
+  {
+    title: "Content blnder",
+    icon: blnder,
+  },
+  
+ 
 
 ];
 

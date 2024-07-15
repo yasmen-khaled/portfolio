@@ -14,34 +14,36 @@ interface IServiceCard {
   icon: string;
 }
 
-const ServiceCard: React.FC<IServiceCard> = ({ index }) => (
-  <Tilt
-    glareEnable
-    tiltEnable
-    tiltMaxAngleX={40}
-    tiltMaxAngleY={40}
-    glareColor="#aaa6i3"
-    scale={1.2}
-  >
-    <div className="xs:w-[250px] w-full">
-      <motion.div
-        variants={fadeIn("up", "spring", index * 0.3, 0.75)}
-        className="notification green-pink-gradient shadow-card w-full rounded-[20px] p-[1px] w-[200px]"
-      >
-        <div className="">
-          <img
-            
-            alt="web-development"
-            className="h-16 w-16 object-contain"
-          />
+const ServiceCard: React.FC<IServiceCard> = ({ index, icon }) => { // Destructure icon from props
+  return (
+    <Tilt
+      glareEnable
+      tiltEnable
+      tiltMaxAngleX={40}
+      tiltMaxAngleY={40}
+      glareColor="#aaa6i3"
+      scale={1.2}
+    >
+      <div className="xs:w-[220px] w-full h-[150px]  ">
+        <motion.div
+          variants={fadeIn("up", "spring", index * 0.3, 0.75)}
+          className="notification green-pink-gradient shadow-card w-full rounded-[20px] p-[1px] w-[200px] justify-center items-center"
+        >
+          <div className="">
+            <img
+              src={icon} 
+              alt=""
+              className="w-[50w-[100px] h-[70px] bottom-0 mt-autopx] h-[150px] mx-auto " 
+            />
+{/* flex flex-col justify-center items-center w-full */}
+      
 
-          {/* Assuming you want to show the title here */}
-         
-        </div>
-      </motion.div>
-    </div>
-  </Tilt>
-);
+          </div>
+        </motion.div>
+      </div>
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
