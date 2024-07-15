@@ -27,7 +27,6 @@ import {
   tesla,
   shopify,
   carrent,
-  jobit,
   tripguide,
   threejs,
   ui,
@@ -36,6 +35,10 @@ import {
   laravel,
   typescript2,
   blnder,
+  lymo,
+  zumra,
+  proto,
+  air,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -151,50 +154,92 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
+    title: "Web Developer",
+    companyName: "RBK bootcamp",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January to April 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "I pursued web development courses at RBK Tunisia, where I honed my skills in HTML, JavaScript, CSS, JQuery, and Bootstrap.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    title: "Entrepreneurship",
+    companyName: "6*6 project",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "October 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "I participated in the Entrepreneurship Strategic Planning Leadership Skills program by Riyadah 6*6 project, focusing on strategic planning and leadership in entrepreneurship",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "Google Developer Club ",
+    companyName: "Hakathon",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2021 - january",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      " I participated in and won a Hackathon organized by the Google Developer Club. I contributed as a UI/UX developer for the Peak2Peak educational solution application",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
+    title: "Yasmeals",
+    companyName: "food App",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "2021 - jun",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "  I founded Yes Meals, a food delivery application, and led its management until October of the same year. This experience sharpened my skills in leadership, management, entrepreneurship, strategic thinking, and innovative problem-solving.",
     ],
   },
+
+
+  {
+    title: "Yasgames",
+    companyName: "E-commerce",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "2021 - Desmber",
+    points: [
+      "   I launched a new e-commerce venture focused on selling board games and products, expanding my entrepreneurial endeavors.",
+    ],
+  },
+  {
+    title: "e-bina",
+    companyName: "Entepunership program",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "2022 march - 2023 Feb",
+    points: [
+      " I participated in the E-bina program, a selective year-long course in management, entrepreneurship, and startup fundamentals. Out of 300 participants, I successfully completed the program alongside 20 others, gaining expertise in business canvas development, startup strategies, and operational management, which I applied to enhance Yes Meals Start-up.",
+    ],
+  },
+
+
+  {
+    title: "ALX program",
+    companyName: "software engineering",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "2023 jun - 2024 jouly",
+    points: [
+      "I have been enrolled in the ALX Program in Software Engineering, a comprehensive 12-month course focusing on software development. This program has provided me with extensive experience and skills in both backend and frontend development, shaping me into a proficient full-stack developer.",
+    ],
+  },
+
+  {
+    title: "Dorcas Agency",
+    companyName: "Tech company",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "2024 April - present",
+    points: [
+      "working at Dorcas Agency tech company as a UI/UX designer, Using Figma to design websites and applications",
+    ],
+  },
+
+
 ];
 
 const testimonials: TTestimonial[] = [
@@ -224,6 +269,8 @@ const testimonials: TTestimonial[] = [
   },
 ];
 
+
+
 const projects: TProject[] = [
   {
     name: "Yasgames",
@@ -234,29 +281,33 @@ const projects: TProject[] = [
       alt: "Car Rental Platform",
     },
     sourceCodeLink: "https://github.com/",
-    liveSiteLink: "https://car-rent.example.com",
+    liveSiteLink: "#",
   },
+
+
   {
     name: "Zumra",
-    description:
-      " blood Donation platform",
-    tags: [
-      
-    ],
-    image: jobit,
+    description: " E-commerce platform",
+    tags: [],
+    image: {
+      src: zumra, 
+      alt: "Car Rental Platform",
+    },
     sourceCodeLink: "https://github.com/",
-    liveSiteLink: "https://github.com/",
+    liveSiteLink: "#",
   },
+
+
   {
     name: "LYMonada",
-    description:
-      "3D  platform for showcasing projects",
-    tags: [
-      
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
-    liveSiteLink: "https://github.com/",
+    description: " 3d showcase platform",
+    tags: [],
+    image: {
+      src: lymo, 
+      alt: "Car Rental Platform",
+    },
+    sourceCodeLink: "https://github.com/yasmen-khaled/landing-page",
+    liveSiteLink: "#",
   },
 
 
@@ -264,14 +315,14 @@ const projects: TProject[] = [
 
   {
     name: "protobyte",
-    description:
-      " C# Managment system",
-    tags: [
-      
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
-    liveSiteLink: "https://github.com/",
+    description: " C# system management ",
+    tags: [],
+    image: {
+      src: proto, 
+      alt: "Car Rental Platform",
+    },
+    sourceCodeLink: "https://github.com/Hiba-bakka/hibabk/tree/main/Protobyte2",
+    liveSiteLink: "#",
   },
 
 
@@ -286,21 +337,21 @@ const projects: TProject[] = [
       src: tripguide, 
       alt: "Car Rental Platform",
     },
-    sourceCodeLink: "https://github.com/",
-    liveSiteLink: "https://car-rent.example.com",
+    sourceCodeLink: "https://github.com/HoodaHashem/simple_shell",
+    liveSiteLink: "#",
   },
 
 
   {
     name: "Airbnb",
-    description:
-      "A comprehensive travel booking platform ",
-    tags: [
-      
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
-    liveSiteLink: "https://github.com/",
+    description: " Rental platform",
+    tags: [],
+    image: {
+      src: air, 
+      alt: "Car Rental Platform",
+    },
+    sourceCodeLink: "https://github.com/yasmen-khaled/AirBnB_clone_v4",
+    liveSiteLink: "#",
   },
 
 

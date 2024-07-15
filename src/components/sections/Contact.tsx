@@ -70,7 +70,7 @@ const Contact = () => {
     
       
       <div>
-      <h1 className="terminal-text"> Take a look to my Experience and what i have done so far  </h1> {/* Your title here */}
+      <h1 className="terminal-text"> Take a look to my Experiences </h1>
 
         <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 7, 14], fov: 30 }} style={{ width: '800px', height: '600px' }}>
           <EarthCanvas />

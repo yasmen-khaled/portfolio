@@ -21,7 +21,7 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(100px)",
         width: "250px",
-        height: "580px",
+        height: "550px",
         
      
         

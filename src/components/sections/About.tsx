@@ -14,7 +14,7 @@ interface IServiceCard {
   icon: string;
 }
 
-const ServiceCard: React.FC<IServiceCard> = ({ index, icon }) => { // Destructure icon from props
+const ServiceCard: React.FC<IServiceCard> = ({ index, icon }) => { 
   return (
     <Tilt
       glareEnable
@@ -33,8 +33,9 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, icon }) => { // Destructur
             <img
               src={icon} 
               alt=""
-              className="w-[50w-[100px] h-[70px] bottom-0 mt-autopx] h-[150px] mx-auto " 
+              className="w-[50w-[50px] h-[50px] bottom-0 mt-autopx]" 
             />
+            
 {/* flex flex-col justify-center items-center w-full */}
       
 
@@ -63,7 +64,7 @@ const About = () => {
         {config.sections.about.content}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center ">
+      <div className="mt-20 flex flex-wrap gap-5 max-sm:justify-center ">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
