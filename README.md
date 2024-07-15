@@ -1,6 +1,6 @@
 # 3D Portfolio Showcase
 
-![Image Description](IMAGE_URL)
+![Image Description](file:///C:/Users/issa/Pictures/Screenshots/Screenshot%202024-07-15%20195354.png)
 
 Welcome to my 3D Portfolio Showcase! This project is designed to display my professional journey through an interactive 3D environment, leveraging cutting-edge technologies such as Three.js, React, TypeScript, and Blender for object modeling. The goal is to provide a unique and engaging way to explore my skills, experiences, and projects.
 
