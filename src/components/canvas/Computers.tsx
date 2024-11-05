@@ -22,7 +22,7 @@ const Computers = ({ isMobile }) => {
   // music effect
 
   useEffect(() => {
-    const audio = new Audio('./desktop_pc/music.mp4');
+    const audio = new Audio('./desktop_pc/radio.mp4');
     audio.loop = true;
     audioRef.current = audio;
     audio.play();
@@ -46,7 +46,7 @@ const Computers = ({ isMobile }) => {
             audioRef.current.play();
           } else {
             audioRef.current.pause();
-            audioRef.current.currentTime = 0; // Reset to the beginning
+            audioRef.current.currentTime = 0; 
           }
         }
       }

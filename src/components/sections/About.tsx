@@ -24,7 +24,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, icon }) => {
       glareColor="#aaa6i3"
       scale={1.2}
     >
-      <div className="xs:w-[220px] w-full h-[150px]  ">
+      <div className="xs:w-[220px] w-full h-[150px]">
         <motion.div
           variants={fadeIn("up", "spring", index * 0.3, 0.75)}
           className="notification green-pink-gradient shadow-card w-full rounded-[20px] p-[1px] w-[200px] justify-center items-center"
@@ -36,13 +36,13 @@ const ServiceCard: React.FC<IServiceCard> = ({ index, icon }) => {
               className="w-[50w-[50px] h-[50px] bottom-0 mt-autopx]" 
             />
             
-{/* flex flex-col justify-center items-center w-full */}
       
 
           </div>
         </motion.div>
       </div>
     </Tilt>
+    
   );
 };
 

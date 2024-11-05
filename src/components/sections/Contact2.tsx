@@ -38,32 +38,32 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        emailjsConfig.serviceId,
-        emailjsConfig.templateId,
-        {
-          form_name: form.name,
-          to_name: config.html.fullName,
-          from_email: form.email,
-          to_email: config.html.email,
-          message: form.message,
-        },
-        emailjsConfig.accessToken
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+      // .send(
+      //   emailjsConfig.serviceId,
+      //   emailjsConfig.templateId,
+      //   {
+      //     form_name: form.name,
+      //     to_name: config.html.fullName,
+      //     from_email: form.email,
+      //     to_email: config.html.email,
+      //     message: form.message,
+      //   },
+      //   emailjsConfig.accessToken
+      // )
+      // .then(
+      //   () => {
+      //     setLoading(false);
+      //     alert("Thank you. I will get back to you as soon as possible.");
 
-          setForm(INITIAL_STATE);
-        },
-        (error) => {
-          setLoading(false);
+      //     setForm(INITIAL_STATE);
+      //   },
+      //   (error) => {
+      //     setLoading(false);
 
-          console.log(error);
-          alert("Something went wrong.");
-        }
-      );
+      //     console.log(error);
+      //     alert("Something went wrong.");
+      //   }
+      // );
   };
 
   return (

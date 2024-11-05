@@ -8,7 +8,6 @@ import {
   Navbar,
  
   Works,
-  StarsCanvas,
   
 } from "./components";
 import { useEffect } from "react";
